@@ -1,6 +1,7 @@
 import './BodyLogin.min.css'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import { Link } from "react-router-dom";
 
 
 function BodyCadastro() {
@@ -25,7 +26,11 @@ function BodyCadastro() {
     
                 </Box>
                 <button className='btn-entrar'>AVANÇAR</button>
-                
+                <div className="cadastre">
+                <p>Já possui uma conta? <Link to="/login">Login</Link></p>
+
+                </div>
+
                 </div>
                 
             </div>

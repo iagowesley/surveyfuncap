@@ -9,7 +9,7 @@ const Rotas = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<BodyLogin />} path="/" />
+        <Route element={<BodyLogin />} path="/login" />
         <Route element={<BodyCadastro />} path="/cadastro" />
         <Route element={<EsqueceuSenha />} path="/esqueceusenha" />
       </Routes>
