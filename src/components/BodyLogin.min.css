@@ -1,0 +1,107 @@
+
+
+.body-login {
+    height: 90vh;
+    background: rgb(51,80,94);
+    background: linear-gradient(342deg, rgba(51,80,94,1) 36%, rgba(66,93,107,1) 68%, rgba(66,90,102,1) 100%);
+    display: flex;
+    align-items: center;
+}
+
+.caixa-login {
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    -webkit-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+    box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+}
+
+.caixa-login h2 {
+    font-weight: 100;
+    font-size: 16px;
+    color: #1E3D4B;
+}
+
+.caixa-login p {
+    font-size: 24px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.btn-entrar {
+    position: relative;
+    top: 15px;
+    border-radius: 5px;
+    background-color: #1E3D4B;
+    width: 90%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin: 0 auto;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.cadastre {
+    position: relative;
+    top: 25px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cadastre p,
+.cadastre a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1E3D4B;
+}
+
+.cadastre a {
+    font-weight: 600;
+}
+
+@media (max-width:376px) {
+    .caixa-login {
+        border-radius: 7px;
+        background-color: #fff;
+        margin: 0 auto;
+        width: 90%;
+        height: 70%;
+        text-align: center;
+        -webkit-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        -moz-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+    }
+
+    .caixa-login p {
+        font-size: 15px;
+    }
+
+    .cadastre p,
+    .cadastre a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #1E3D4B;
+    }
+    .inputs {
+        width: 90%;
+    }
+}
+
