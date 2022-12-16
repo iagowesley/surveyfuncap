@@ -1,11 +1,10 @@
 
 
 .body-login {
-    height: 90vh;
+    height: 91vh;
     background: rgb(51,80,94);
     background: linear-gradient(342deg, rgba(51,80,94,1) 36%, rgba(66,93,107,1) 68%, rgba(66,90,102,1) 100%);
     display: flex;
-    align-items: center;
 }
 
 .caixa-login {
@@ -16,6 +15,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 5%;
     width: 30%;
     height: 70%;
     text-align: center;
@@ -30,17 +30,25 @@
     color: #1E3D4B;
 }
 
-.caixa-login p {
+.entre-na-conta {
     font-size: 24px;
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
 }
+
+.box-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
 
 .btn-entrar {
     position: relative;
@@ -77,12 +85,44 @@
     font-weight: 600;
 }
 
-@media (max-width:376px) {
+@media (max-width:990px) {
     .caixa-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 7px;
         background-color: #fff;
-        margin: 0 auto;
+        width: 60%;
+        margin-top: 5%;
+        height: 50%;
+        text-align: center;
+        -webkit-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        -moz-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+    }
+
+    .caixa-login p {
+        font-size: 15px;
+    }
+
+    .cadastre p,
+    .cadastre a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #1E3D4B;
+    }
+    .inputs {
         width: 90%;
+    }
+}
+@media (max-width:500px) {
+    .caixa-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: #fff;
+        width: 75%;
         height: 70%;
         text-align: center;
         -webkit-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
@@ -105,3 +145,45 @@
     }
 }
 
+@media (max-width:350px) {
+    .caixa-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        background-color: #fff;
+        width: 90%;
+        height: 70%;
+        margin-top: 25%;
+        text-align: center;
+        -webkit-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        -moz-box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+        box-shadow: 0px -1px 23px -1px rgba(0,0,0,0.77);
+    }
+
+    .caixa-login p {
+        font-size: 15px;
+    }
+
+    .cadastre p,
+    .cadastre a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #1E3D4B;
+    }
+    .inputs {
+        width: 90%;
+    }
+}
+
+.error {   
+    width: 100%;
+    color: #bf1650;
+    font-size: 15px;
+    text-align: start;
+  }
+  
+  .error::before {
+    display: inline;
+    content: "⚠ ";
+  }
