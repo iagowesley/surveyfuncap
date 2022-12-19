@@ -12,6 +12,7 @@ const Rotas = () => {
         <Route element={<BodyLogin />} path="/login" />
         <Route element={<BodyCadastro />} path="/cadastro" />
         <Route element={<EsqueceuSenha />} path="/esqueceusenha" />
+      
       </Routes>
     </BrowserRouter>
   );
