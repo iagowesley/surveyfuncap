@@ -17,31 +17,47 @@ const Main = ({email}) => {
           <div className="card">
             <i></i>
             <div className="card-inner">
-              <p>Lista dos seus surveys</p>
+              <p>Teste</p>
             </div>
           </div>
           <div className="card">
             <i></i>
             <div className="card-inner">
-              <p>Lista dos seus surveys</p>
+              <p>Teste</p>
             </div>
           </div>
           <div className="card">
             <i></i>
             <div className="card-inner">
-              <p>Lista dos seus surveys</p>
+              <p>Teste</p>
             </div>
           </div>
           <div className="card">
             <i></i>
             <div className="card-inner">
-              <p>Lista dos seus surveys</p>
+              <p>Teste</p>
             </div>
           </div>
           <div className="card">
             <i></i>
             <div className="card-inner">
-              <p>Lista dos seus surveys</p>
+              <p>Teste</p>
+            </div>
+          </div>
+          <div className="card">
+            <i></i>
+            <div className="card-inner">
+              <p>Teste</p>
+            </div>
+          </div><div className="card">
+            <i></i>
+            <div className="card-inner">
+              <p>Teste</p>
+            </div>
+          </div><div className="card">
+            <i></i>
+            <div className="card-inner">
+              <p>Teste</p>
             </div>
           </div>
         </div>
