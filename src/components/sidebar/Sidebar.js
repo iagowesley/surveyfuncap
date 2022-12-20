@@ -1,5 +1,9 @@
 import "./Sidebar.min.css";
 import logo from "../../assets/perfil.jfif";
+import { Link } from "react-router-dom";
+import { color } from "@mui/system";
+
+
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
     <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
@@ -46,7 +50,8 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         </div>
         <div className="sidebar-logout">
           <i className="fa fa-plus-circle"></i>
-          <a href="#">Logout</a>
+          
+          <Link to="/login">Logout</Link>
         </div>
       </div>
     </div>

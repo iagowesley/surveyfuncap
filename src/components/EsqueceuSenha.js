@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
+import Navbar from "../components/navbar/Navbar";
+
 
 function BodyCadastro() {
 
@@ -21,6 +23,8 @@ const save = (data) => {
 }
 
   return (
+    <div>
+    <Navbar/>
     <div className="body-login">
       <div className="caixa-login">
         <form onSubmit={handleSubmit(save)}>
@@ -42,6 +46,7 @@ const save = (data) => {
         </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }

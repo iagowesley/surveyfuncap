@@ -4,6 +4,8 @@ import TextField from '@mui/material/TextField';
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
+import Navbar from "../components/navbar/Navbar";
+
 import * as yup from "yup"
 
 
@@ -24,8 +26,11 @@ function BodyCadastro() {
     }
 
     return ( 
+        <div>
+            <Navbar/>
         <div className="body-login">
             <div className="caixa-login">
+                
             <form onSubmit={handleSubmit(save)}>
 
                 <h2>Etapa 1 - Dados</h2>
@@ -51,6 +56,7 @@ function BodyCadastro() {
                 </div>
                 </form>
             </div>
+        </div>
         </div>
      );
 }

@@ -1,26 +1,19 @@
 import React from "react";
 import Rotas from "./routes/Rotas";
-import Sidebar from "./components/sidebar/Sidebar";
+// import Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
 
-import { useState } from "react";
 import './App.css';
+import Dashboard from "./components/Dashboard";
 
 const App = () => {
 
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const openSidebar = () => {
-    setSidebarOpen(true);
-  }
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-  }
+  
 
   return (
-    <div className="container">
-      {/* <Header/> */}
-      <Navbar />
-      <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
+    <div className="">
+      {/* <Navbar/> */}
+      {/* <Dashboard/> */}
       <Rotas/>
     </div>
   );

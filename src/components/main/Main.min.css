@@ -1,0 +1,144 @@
+main {
+  background-color: #f3f4f6;
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.main-container {
+  padding: 20px 35px;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+}
+
+.main-title > img {
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.main-greeting > h1 {
+  font-size: 20px;
+  color: #2e4a66;
+  margin-bottom: 5px;
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px #ededed, -5px -5px 13px #fff;
+}
+
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.charts-left {
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px #ededed, -5px -5px 13px #fff;
+}
+
+.charts-left-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts-right {
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px #ededed, -5px -5px 13px #fff;
+}
+
+.charts-right-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.charts-right-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card1 {
+  background-color: #d1ecf1;
+  color: #35a4ba;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card2 {
+  background-color: #d1ecf1;
+  color: #5e7579;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card3 {
+  background-color: #d1ecf1;
+  color: #020e10;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.card4 {
+  background-color: #d1ecf1;
+  color: #46747d;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 855px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .charts {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .charts-right-cards {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-top: 30px;
+  }
+}
