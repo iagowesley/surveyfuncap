@@ -9,6 +9,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import { Box } from "@mui/system";
+
 
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
@@ -31,7 +33,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <h4>GERENCIAMENTO</h4>
         <div className="sidebar-link active-menu-link">
           <i className="fa fa-plus-circle"></i>
-          <a href="#">Dashboard</a>
+        <Box component={DashboardIcon}></Box> <a href="#">&nbsp;&nbsp;Dashboard</a>
         </div>
         <div className="sidebar-link ">
           <i className="fa fa-plus-circle"></i>
@@ -45,7 +47,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                <a href="#">N/A</a>
+                <a href="#">Meus resultados</a>
               </Typography> 
              
             </AccordionDetails>

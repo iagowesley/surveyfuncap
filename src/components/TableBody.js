@@ -13,7 +13,7 @@ const TableBody = ({formList}) => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select" 
-          sx={{width:'100%', borderBottom: '1px solid gray'
+          sx={{width:'100%'
         }}
           label="Age"
         >
@@ -22,12 +22,12 @@ const TableBody = ({formList}) => {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          sx={{width:'100%', borderBottom: '1px solid gray'}}
+          sx={{width:'100%'}}
           label="Age"
         >
-          <MenuItem value={10}>Resposta aberta</MenuItem>
-          <MenuItem value={20}>Resposta acertiva</MenuItem>
-          <MenuItem value={30}>Anexo</MenuItem>
+          <MenuItem value={10}>1 - Resposta aberta</MenuItem>
+          <MenuItem value={20}>2 - Resposta acertiva</MenuItem>
+          <MenuItem value={30}>3 - Anexo</MenuItem>
         </Select>
         </div>
         

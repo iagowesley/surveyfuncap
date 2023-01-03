@@ -5,7 +5,11 @@ import Navbar from "./navbar/Navbar";
 import Sidebar from "./sidebar/Sidebar";
 import Button from "@mui/material/Button";
 import { useState } from "react";
+import TelegramIcon from '@mui/icons-material/Telegram';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
+import DeleteIcon from '@mui/icons-material/Delete';
 import "./CreateForm.min.css";
+import { Box } from "@mui/system";
 
 const CreateForm = ({ formList }) => {
   const [count, setCount] = useState(0);
@@ -41,13 +45,13 @@ const CreateForm = ({ formList }) => {
         <div className="table-body">
             {asks.map(()=><TableBody/>)}
           <div className="create-form-buttons">
-            <Button variant="contained" sx={{ height: "100%", width: "100%" }}>
+            <Button variant="contained" sx={{ height: "100%", width: "100%", backgroundColor: '#1E3D4B' }} startIcon={<Box component={TelegramIcon}></Box>}>
               Enviar
             </Button>
-            <Button onClick={handleAsk} variant="outlined" sx={{ height: "100%", width: "100%" }}>
+            <Button onClick={handleAsk} variant="outlined" sx={{ height: "100%", width: "650px" }} startIcon={<Box sx={{'& *':{fill: "#1976d2"}}} component={ControlPointIcon}></Box>}> 
               Nova pergunta
             </Button>
-            <Button onClick={removeAsk} variant="outlined" sx={{ height: "100%", width: "100%" }}>
+            <Button onClick={removeAsk} variant="outlined" sx={{ height: "100%", width: "100%" }} startIcon={<Box sx={{'& *':{fill: "#1976d2"}}} component={DeleteIcon}></Box>}>
               Remover
             </Button>
           </div>
