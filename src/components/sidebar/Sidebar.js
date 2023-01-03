@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
+
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
     <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
@@ -62,7 +63,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                <a href="#">Criar formulários</a>
+                <Link to="/create-form">Criar formulários</Link>
               </Typography> 
               <Typography style={{'marginTop':10}}>
                 <a href="#">Listar formulários</a>

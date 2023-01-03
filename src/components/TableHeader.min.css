@@ -1,0 +1,9 @@
+.table-header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    box-sizing: border-box;
+    padding: 2.5rem 1rem;
+}

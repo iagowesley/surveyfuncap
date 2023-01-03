@@ -5,6 +5,7 @@ import EsqueceuSenha from "../components/EsqueceuSenha";
 import BodyLogin from "../components/BodyLogin";
 import BodyCadastro from "../components/BodyCadastro";
 import Dashboard from "../components/Dashboard";
+import CreateForm from "../components/CreateForm";
 import { useState } from "react";
 
 const Rotas = () => {
@@ -16,7 +17,8 @@ const Rotas = () => {
         <Route element={<BodyCadastro />} path="/cadastro" />
         <Route element={<EsqueceuSenha />} path="/esqueceusenha" />
         <Route element={<Dashboard email={email}/>} path="/dashboard" />
-      
+        <Route element={<CreateForm />} path="/create-form" />
+
       </Routes>
     </BrowserRouter>
   );
