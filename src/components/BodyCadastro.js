@@ -40,9 +40,9 @@ function BodyCadastro() {
                 <Box className='box-inputs'>
                 <TextField label="Nome do proponente" {...register("name_prop")}/>
                 {errors?.name_prop && <p className='error'>{errors?.name_prop?.message}</p>}
-                <TextField style={{marginTop:25}} label="Nome da empresa" {...register("name_company")}/>
+                <TextField style={{marginTop:25}} label="Nome da empresa/instituição" {...register("name_company")}/>
                 {errors?.name_company && <p className='error'>{errors?.name_company?.message}</p>}
-                <TextField style={{marginTop:25}} label="CNPJ" {...register("cnpj")}/>
+                <TextField style={{marginTop:25}} label="CPF/CNPJ" {...register("cnpj")}/>
                 {errors?.cnpj && <p className='error'>{errors?.cnpj?.message}</p>}
 
     
